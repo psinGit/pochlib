@@ -1,0 +1,141 @@
+@font-face {
+    font-family: OpenSans;
+    src:url("OpenSans-Light.ttf") format("ttf");
+}
+
+body, input, button {
+    font-family:  OpenSans, Arial, sans-serif;
+}
+
+h1 {
+    background-color:lightgray ;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+#content h2 {
+    background-color: burlywood;
+}
+
+h3 {
+        text-align: center;
+        background-color: burlywood;
+}
+
+#btn_addBook, #btn_submit, #btn_reset {
+    height: 25px;
+    max-width: 175px;
+    background-color:teal;
+    border: none;
+    color: cornsilk;
+    opacity: 0.9;
+    font-family: inherit;
+    /*font-size: 1em;*/
+    display:block;
+}
+
+input {
+    width: 100%;
+}
+
+form, input {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    display: block;
+    font-family: inherit;
+}
+
+#btn_submit, #btn_reset {
+    margin-bottom: 10px;
+    margin-left: 0px;
+    
+}
+
+#btn_reset {
+    background-color: red;
+}
+
+.p_picture {
+    display: flex;
+    justify-content: center;
+}
+
+.picture {
+    max-width: 220px;
+    min-height: 187px;
+}
+
+#div_bookmark {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookmark, .trash {
+    width: 2em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.hTitre {
+    display: inline-block;
+    margin: 0;
+}
+
+article {
+    width: 30%;
+    border-style: groove;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 1250px) {
+    
+    body, input, button {
+        width: 90%;
+        margin:auto;
+    }
+
+    #btn_addBook, #btn_submit, #btn_reset {
+        font-size: large;
+        margin-top: 10px;
+    }
+
+    label {
+        font-size: 0.8em;
+        margin-bottom: 15px;
+    }
+
+    input {
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    body {
+        font-size: large;
+    }
+
+    section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    article {
+        width:100%;
+    }
+}
